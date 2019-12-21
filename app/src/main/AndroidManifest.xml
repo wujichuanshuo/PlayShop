@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.playshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".adminuser.MemberDelActivity"></activity>
+        <activity android:name=".adminuser.MemberModificationActivity" />
+        <activity android:name=".adminuser.MemberQueryActivity" />
+        <activity android:name=".adminuser.MemberAddActivity" />
+        <activity android:name=".adminuser.ToyReturnActivity" />
+        <activity android:name=".adminuser.PlayRentalActivity" />
+        <activity android:name=".admin.AdminuserAddActivity" />
+        <activity android:name=".admin.StockInputActivity" />
+        <activity android:name=".our.PlayManageActivity" />
+        <activity android:name=".our.PlayQueryActivity" />
+        <activity android:name=".adminuser.AdminuserMainActivity" />
+        <activity android:name=".admin.AdminMainActivity" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
